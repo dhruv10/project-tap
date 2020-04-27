@@ -1,8 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 
+// Components
+import Article from '../components/article';
+
+// Data
+import { homePageArticles } from '../assets/articles/homePageArticles';
+
 // Images
-// import TapLogoSVG from '../assets/tap_logo.svg';
+// import TapLogoSVG from '../assets/images/tap_logo.svg';
 
 const Home = () => (
   <div className='bg-dark-primary'>
@@ -40,25 +46,9 @@ const Home = () => (
       <p className='text-white text-5xl font-bold mt-64 z-3'>
         Discover Articles
       </p>
-
-      <div className='my-16 flex justify-between'>
-        <div className='w-2/5'>
-          <p className='text-white text-3xl font-bold'>
-            Automatic tracking with GitHub
-          </p>
-          <p className='text-txt-gray text-sm font-semibold mt-8'>
-            Tezos Commons supports the ideas, individuals and organizations
-            dedicated to building the digital commonwealth. <br /> <br />
-            We empower the community to be the architects through bootstrapping
-            local communities, communications, promotion, education, funding
-            open source initiatives and advocacy.
-          </p>
-          <button className='bg-transparent border-2 border-solid border-green-400 hover:bg-green-400 hover:text-white text-green-400 font-bold py-2 px-4 mt-8 rounded'>
-            Learn more >>
-          </button>
-        </div>
-        <div className='w-3/5'></div>
-      </div>
+      {homePageArticles.map((article) => {
+        return <Article heading={article.heading} content={article.content} />;
+      })}
     </section>
   </div>
 );
