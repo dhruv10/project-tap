@@ -5,3 +5,14 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+body {
+    overflow-x: hidden;
+}
+
+.rotate-4 {
+    transform: rotate(4deg);
+}
+
+.-rotate-7 {
+    transform: rotate(-7deg);
+}
