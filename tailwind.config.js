@@ -7,12 +7,12 @@ module.exports = {
         'dark-blue': '#170F59',
         'light-blue': '#2F3676',
         'light-pink': '#FF3297',
-        'txt-gray': '#C6C1B9'
+        'txt-gray': '#C6C1B9',
       },
       width: {
         '6/5': '120%',
         '7/5': '130%',
-        'half': '50%'
+        half: '50%',
       },
       height: {
         '1/3': '33.33%',
@@ -20,10 +20,10 @@ module.exports = {
         '3/5': '60%',
         '3/4': '70%',
         '4/5': '80%',
-        'half': '50%'
+        half: '50%',
       },
       borderRadius: {
-        oval: '50%'
+        oval: '50%',
       },
       inset: {
         '-1/10': '-10%',
@@ -46,7 +46,7 @@ module.exports = {
         2: 2,
         3: 3,
         4: 4,
-      }
+      },
     },
     textColor: (theme) => ({
       ...theme('colors'),

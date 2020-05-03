@@ -16,3 +16,7 @@ body {
 .-rotate-7 {
     transform: rotate(-7deg);
 }
+
+.bg-grad-red {
+    background: linear-gradient(180deg, rgba(234, 53, 129, 0) 7.29%, rgba(238, 53, 53, 0.17) 100%);
+}
