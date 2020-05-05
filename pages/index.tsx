@@ -8,7 +8,7 @@ import Article from '../components/article';
 import { homePageArticles } from '../assets/articles/homePageArticles';
 
 // Images
-// import TapLogoSVG from '../assets/images/tap_logo.svg';
+const MainLogoURL = '/images/tap_logo.svg';
 
 const Home = () => (
   <div className='bg-dark-primary'>
@@ -29,8 +29,7 @@ const Home = () => (
         </p>
       </div>
       <div className='text-white'>
-        {/* <TapLogoSVG /> */}
-        LOGO
+        <img src={MainLogoURL} width='40%' />
       </div>
     </section>
 
