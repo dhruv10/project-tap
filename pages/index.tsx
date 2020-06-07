@@ -26,6 +26,7 @@ const Home = () => (
           The Abstract People is a New Delhi based community that deals in human
           welfare, conducts social campaigns and indulges itself in Arts and
           Cultural Events.
+          
         </p>
       </div>
       <div className='text-white'>
