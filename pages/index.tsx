@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 // Components
 import Article from '../components/article';
@@ -42,9 +43,9 @@ const Home = () => (
     </section>
 
     <section className='h-screen w-full px-16'>
-      <p className='text-white text-5xl font-bold mt-64 z-3'>
+      <Link href='./exploreArticles'><a><p className='text-white text-5xl font-bold mt-64 z-3'>
         Discover Articles
-      </p>
+      </p></a></Link>
       {homePageArticles.map((article) => {
         return <Article heading={article.heading} content={article.content} />;
       })}
