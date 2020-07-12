@@ -20,3 +20,21 @@ body {
 .bg-grad-red {
     background: linear-gradient(180deg, rgba(234, 53, 129, 0) 7.29%, rgba(238, 53, 53, 0.17) 100%);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #808080; 
+}
