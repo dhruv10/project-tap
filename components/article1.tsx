@@ -4,20 +4,35 @@ const TAPLogo = '/images/tap_logo.svg';
 
 const Article1 = (props: { topic: string; description: string; author: string; issueDate: string; timeToRead: string; img: string }) => (
     <a href='#'>
-        <div className='grid grid-cols-7 grid-rows-3 gap-2 text-white hover:bg-gray-800 rounded'>
-            <img src={props.img} className='my-10 row-start-1 row-span-3 col-start-1 col-span-4' />
-            <div className='px-12 pt-12 row-start-1 row-span-1 col-start-5 col-span-3 text-5xl font-semibold mx-10 mt-20'>{props.topic}</div>
-            <p className='px-12 row-start-2 row-span-1 col-start-5 col-span-3 text-2xl mx-14'>{props.description}</p>
-
-            <div className='row-start-3 row-span-1 col-start-5 col-span-3'>
-                <div className='grid grid-rows-2 grid-flow-col text-white justify-center content-center'>
-                    <img src={TAPLogo} className='row-start-1 row-span-2 w-16 my-2' />
-                    <p className='row-span-1 col-span-10 text-sm italic ml-2 text-2xl'>{props.author}</p>
-                    <p className='row-span-1 col-span-10 text-xs italic ml-2 text-2xl'>{props.issueDate} - {props.timeToRead}</p>
-                </div>
+        <div className='flex items-center justify-center flex-row text-white transform scale-100 hover:scale-105 hover:shadow-2xl rounded'>
+            <div className='w-3/5'>
+                <img src={props.img} />
             </div>
 
+            <div className='w-2/5 mx-6'>
+                <div className='text-5xl font-semibold'>{props.topic}</div>
+                <p className='text-2xl mx-14'>{props.description}</p>
 
+                <div className='flex mt-2'>
+                    <div className='w-1/5'>
+
+                    </div>
+
+                    <div className='w-1/5'>
+                        <img src={TAPLogo} />
+                    </div>
+
+                    <div className='w-4/6'>
+                        <p className='italic text-xl'>{props.author}</p>
+                        <p className='italic text-base'>{props.issueDate} - {props.timeToRead}</p>
+                    </div>
+
+                    <div className='w-1/5'>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </a>
 );
