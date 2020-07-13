@@ -43,9 +43,13 @@ const Home = () => (
     </section>
 
     <section className='h-screen w-full px-16'>
-      <Link href='./exploreArticles'><a><p className='text-white text-5xl font-bold mt-64 z-3'>
-        Discover Articles
-      </p></a></Link>
+      <Link href='./exploreArticles'>
+        <a>
+          <p className='text-white text-5xl font-bold mt-64 z-3'>
+            Discover Articles
+          </p>
+        </a>
+      </Link>
       {homePageArticles.map((article) => {
         return <Article heading={article.heading} content={article.content} />;
       })}
