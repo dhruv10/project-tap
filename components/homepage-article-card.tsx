@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomepageArticle = (props: { heading: string; content: string }) => (
+const HomepageArticleCard = (props: { heading: string; content: string }) => (
   <div className='my-16 flex justify-between'>
     <div className='w-2/5'>
       <p className='text-white text-3xl font-bold'>{props.heading}</p>
@@ -15,4 +15,4 @@ const HomepageArticle = (props: { heading: string; content: string }) => (
   </div>
 );
 
-export default HomepageArticle;
+export default HomepageArticleCard;

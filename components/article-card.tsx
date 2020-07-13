@@ -2,7 +2,7 @@ import React from 'react';
 
 const TAPLogo = '/images/tap_logo.svg';
 
-const Articles = (props: {
+const ArticleCard = (props: {
   topic: string;
   description: string;
   author: string;
@@ -34,4 +34,4 @@ const Articles = (props: {
   </div>
 );
 
-export default Articles;
+export default ArticleCard;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const TAPLogo = '/images/tap_logo.svg';
 
-const TrendingArticle = (props: {
+const TrendingArticleCard = (props: {
   topic: string;
   description: string;
   author: string;
@@ -41,4 +41,4 @@ const TrendingArticle = (props: {
   </a>
 );
 
-export default TrendingArticle;
+export default TrendingArticleCard;

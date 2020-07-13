@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 // Components
-import Articles from '../components/articles';
-import TrendingArticle from '../components/trending-article';
+import ArticleCard from '../components/article-card';
+import TrendingArticleCard from '../components/trending-article-card';
 import Footer from '../components/footer';
 
 // Data
@@ -78,7 +78,7 @@ const exploreArticles = () => (
         if (index === 0)
           return (
             <section className='px-32 py-12 text-center'>
-              <TrendingArticle
+              <TrendingArticleCard
                 topic={article.topic}
                 description={article.description}
                 author={article.author}
@@ -89,7 +89,7 @@ const exploreArticles = () => (
             </section>
           );
         return (
-          <Articles
+          <ArticleCard
             topic={article.topic}
             description={article.description}
             author={article.author}

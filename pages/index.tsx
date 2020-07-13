@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 // Components
-import Article from '../components/homepage-article';
+import ArticleCard from '../components/homepage-article-card';
 import Footer from '../components/footer';
 
 // Data
@@ -52,7 +52,9 @@ const Home = () => (
         </a>
       </Link>
       {homePageArticles.map((article) => {
-        return <Article heading={article.heading} content={article.content} />;
+        return (
+          <ArticleCard heading={article.heading} content={article.content} />
+        );
       })}
     </section>
     <Footer />
