@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 // Components
-import Article from '../components/article';
+import Article from '../components/homepage-article';
 import Footer from '../components/footer';
 
 // Data

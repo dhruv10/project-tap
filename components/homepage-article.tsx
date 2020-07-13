@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Article = (props: { heading: string; content: string }) => (
+const HomepageArticle = (props: { heading: string; content: string }) => (
   <div className='my-16 flex justify-between'>
     <div className='w-2/5'>
       <p className='text-white text-3xl font-bold'>{props.heading}</p>
@@ -15,4 +15,4 @@ const Article = (props: { heading: string; content: string }) => (
   </div>
 );
 
-export default Article;
+export default HomepageArticle;
