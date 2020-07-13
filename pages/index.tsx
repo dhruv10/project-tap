@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 // Components
 import Article from '../components/article';
+import Footer from '../components/footer';
 
 // Data
 import { homePageArticles } from '../assets/articles/homePageArticles';
@@ -54,12 +55,7 @@ const Home = () => (
         return <Article heading={article.heading} content={article.content} />;
       })}
     </section>
-
-    <section className='h-4 w-full px-16 py-8 flex justify-between items-center bg-grad-red'>
-      <p className='text-white text-1xl z-3'>Copyrights 2020 @TAP</p>
-      <p className='text-white text-1xl z-3'>Made with ❤️ by Dhruv Bhatnagar</p>
-      <p className='text-white text-1xl z-3'>Contact Us</p>
-    </section>
+    <Footer />
   </div>
 );
 

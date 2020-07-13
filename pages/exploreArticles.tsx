@@ -4,6 +4,7 @@ import Head from 'next/head';
 // Components
 import Articles from '../components/articles';
 import Article1 from '../components/article1';
+import Footer from '../components/footer';
 
 // Data
 import { exploreArticlesContent } from '../assets/articles/exploreArticlesContent';
@@ -100,11 +101,7 @@ const exploreArticles = () => (
       })}
     </section>
 
-    <section className='h-4 w-full px-16 py-8 flex justify-between items-center bg-grad-red'>
-      <p className='text-white text-1xl z-3'>Owned by Shivam Singhal</p>
-      <p className='text-white text-1xl z-3'>Made with love by TAP</p>
-      <p className='text-white text-1xl z-3'></p>
-    </section>
+    <Footer />
   </div>
 );
 
