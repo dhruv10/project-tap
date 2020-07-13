@@ -2,7 +2,7 @@ import React from 'react';
 
 const TAPLogo = '/images/tap_logo.svg';
 
-const Article1 = (props: {
+const TrendingArticle = (props: {
   topic: string;
   description: string;
   author: string;
@@ -41,4 +41,4 @@ const Article1 = (props: {
   </a>
 );
 
-export default Article1;
+export default TrendingArticle;

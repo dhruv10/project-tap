@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 // Components
 import Articles from '../components/articles';
-import Article1 from '../components/article1';
+import TrendingArticle from '../components/trending-article';
 import Footer from '../components/footer';
 
 // Data
@@ -78,7 +78,7 @@ const exploreArticles = () => (
         if (index === 0)
           return (
             <section className='px-32 py-12 text-center'>
-              <Article1
+              <TrendingArticle
                 topic={article.topic}
                 description={article.description}
                 author={article.author}
