@@ -44,9 +44,9 @@ const Home = () => (
     </section>
 
     <section className='h-screen w-full px-16'>
-      <Link href='./exploreArticles'>
+      <Link href='./explore-articles'>
         <a>
-          <p className='text-white text-5xl font-bold mt-64 z-3'>
+          <p className='text-white text-5xl font-bold mt-64 z-3 hover:underline'>
             Discover Articles
           </p>
         </a>
