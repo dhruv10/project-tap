@@ -38,6 +38,7 @@ module.exports = {
         "160vh": "160vh",
         "170vh": "170vh",
         "180vh": "180vh",
+        "10": "10px",
       },
       // rotate: {
       //   7: '7deg',
