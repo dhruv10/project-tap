@@ -4,11 +4,11 @@ import React from 'react';
 // Components
 import Article from '../components/homepage-article';
 import Footer from '../components/footer';
-import Notification from '../components/notification';
+import Eventcard from '../components/event-card';
 
 // Data
 import { homePageArticles } from '../assets/articles/homePageArticles';
-import { notificationdata } from '../assets/articles/notification-data.js';
+import { Eventdata } from '../assets/articles/event-data';
 
 // Images
 const MainLogoURL = '/images/tap_logo.svg';
@@ -48,9 +48,9 @@ const Home = () => (
         Discover Events
       </p>
     </a>
-    {notificationdata.map((notify) => {
+    {Eventdata.map((notify) => {
       return (
-        <Notification
+        <Eventcard
           month={notify.month}
           day={notify.day}
           topic={notify.topic}
@@ -62,7 +62,7 @@ const Home = () => (
         />
       );
     })}
-    <section className='h-screen w-full px-16'>
+    <section className='h-screen w-full px-16 mb-64'>
       <Link href='./explore-articles'>
         <a>
           <p className='text-white text-5xl font-bold -mt-64 hover:underline'>
@@ -71,7 +71,13 @@ const Home = () => (
         </a>
       </Link>
       {homePageArticles.map((article) => {
-        return <Article heading={article.heading} content={article.content} />;
+        return (
+          <Article
+            heading={article.heading}
+            content={article.content}
+            img={article.img}
+          />
+        );
       })}
     </section>
     <Footer />

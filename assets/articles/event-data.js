@@ -1,4 +1,4 @@
-export const notificationdata = [
+export const Eventdata = [
   {
     month: 'Mar',
     day: '12',
