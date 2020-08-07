@@ -26,9 +26,9 @@ const Home = () => (
           <span className='text-light-pink'>Built</span> by the <br /> Community
         </div>
         <p className='text-gray-300 font-semibold leading-normal'>
-          The Abstract People is a New Delhi based community that deals in human
-          welfare, conducts social campaigns and indulges itself in Arts and
-          Cultural Events.
+          The Abstract People is a New Delhi based <br></br> community that
+          deals in human welfare, conducts <br></br> social campaigns and
+          indulges itself in Arts <br></br> and Cultural Events.
         </p>
       </div>
       <div className='text-white flex justify-end'>
@@ -62,25 +62,29 @@ const Home = () => (
         />
       );
     })}
-    <section className='h-screen w-full px-16 mb-64'>
-      <Link href='./explore-articles'>
-        <a>
-          <p className='text-white text-5xl font-bold -mt-64 hover:underline'>
-            Discover Articles
-          </p>
-        </a>
-      </Link>
-      {homePageArticles.map((article) => {
-        return (
-          <Article
-            heading={article.heading}
-            content={article.content}
-            img={article.img}
-          />
-        );
-      })}
-    </section>
-    <Footer />
+    <div className='flex flex-col'>
+      <div className='h-screen px-16'>
+        <Link href='./explore-articles'>
+          <a>
+            <p className='text-white text-5xl font-bold -mt-64 hover:underline'>
+              Discover Articles
+            </p>
+          </a>
+        </Link>
+        {homePageArticles.map((article) => {
+          return (
+            <Article
+              heading={article.heading}
+              content={article.content}
+              img={article.img}
+            />
+          );
+        })}
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </div>
   </div>
 );
 
