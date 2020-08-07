@@ -1,13 +1,14 @@
-import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import React from 'react';
 // Components
 import Article from '../components/homepage-article';
 import Footer from '../components/footer';
+import Eventcard from '../components/event-card';
 
 // Data
 import { homePageArticles } from '../assets/articles/homePageArticles';
+import { Eventdata } from '../assets/articles/event-data';
 
 // Images
 const MainLogoURL = '/images/tap_logo.svg';
@@ -30,7 +31,7 @@ const Home = () => (
           Cultural Events.
         </p>
       </div>
-      <div className='text-white'>
+      <div className='text-white flex justify-end'>
         <img src={MainLogoURL} width='40%' />
       </div>
     </section>
@@ -42,17 +43,41 @@ const Home = () => (
       <div className='bg-light-blue h-half w-3/4 rounded-oval absolute -right-1/5 top-170vh rotate-4 z-3'></div>
       <div className='bg-dark-primary h-half w-3/5 rounded-oval absolute -left-1/120 top-180vh rotate-4 z-3'></div>
     </section>
-
-    <section className='h-screen w-full px-16'>
+    <a>
+      <p className='text-white text-5xl font-bold mt-64 px-16'>
+        Discover Events
+      </p>
+    </a>
+    {Eventdata.map((notify) => {
+      return (
+        <Eventcard
+          month={notify.month}
+          day={notify.day}
+          topic={notify.topic}
+          date={notify.date}
+          subject={notify.subject}
+          place={notify.place}
+          color={notify.color}
+          link={notify.link}
+        />
+      );
+    })}
+    <section className='h-screen w-full px-16 mb-64'>
       <Link href='./explore-articles'>
         <a>
-          <p className='text-white text-5xl font-bold mt-64 z-3 hover:underline'>
+          <p className='text-white text-5xl font-bold -mt-64 hover:underline'>
             Discover Articles
           </p>
         </a>
       </Link>
       {homePageArticles.map((article) => {
-        return <Article heading={article.heading} content={article.content} />;
+        return (
+          <Article
+            heading={article.heading}
+            content={article.content}
+            img={article.img}
+          />
+        );
       })}
     </section>
     <Footer />
