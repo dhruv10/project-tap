@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const Footer = () => (
-  <section className='h-4 w-full px-16 py-8 flex justify-between items-center bg-grad-red mt-64'>
+  <section className='h-4 px-16 py-16 flex justify-between items-center bg-grad-red mt-64'>
     <p className='text-white text-1xl z-3'>Copyrights 2020</p>
     <p className='text-white text-1xl z-3'>Made with ❤️ by team TAP</p>
     <p className='text-white text-1xl z-3'>
