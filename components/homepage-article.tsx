@@ -16,7 +16,7 @@ const HomepageArticle = (props: {
       </button>
     </div>
     <div className='flex justify-end -mr-64 ml-48'>
-      <img src={props.img} width='80%' />
+      <img src={props.img} width='70%' />
     </div>
     <div className='w-3/5'></div>
   </div>

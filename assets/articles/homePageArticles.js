@@ -1,20 +1,20 @@
 export const homePageArticles = [
   {
-    heading: 'Automatic tracking with GitHub',
+    heading: 'The Positives',
     content:
-      'Tezos Commons supports the ideas, individuals and organizations dedicated to building the digital commonwealth.',
-    img: '/images/pages-home-page.png',
+      'Deep down in the wailing hue,The wind which blew The thoughts that flew.',
+    img: '/images/4.jpeg',
   },
   {
-    heading: 'Get updates and create issues',
+    heading: 'Ulajhna nahi aata',
     content:
-      'Tezos Commons supports the ideas, individuals and organizations dedicated to building the digital commonwealth.',
-    img: '/images/pages-home-page.png',
+      'Nhi likhti uljhe hue alfaaz main, mujhe zindagi ki tarah ulajhna nhi aata Kyunki mujhe ghuma fira kr baat krna nhi aata',
+    img: '/images/5.jpeg',
   },
   {
-    heading: 'Get updates and create issues',
+    heading: 'THE FIRST DAY',
     content:
-      'Tezos Commons supports the ideas, individuals and organizations dedicated to building the digital commonwealth.',
-    img: '/images/pages-home-page.png',
+      'On an unwanted monday morning,i woke up having feelings mixed with nervousness and curoristy It was the first day of a new grade, My feet did stop, my brain did fade',
+    img: '/images/6.jpeg',
   },
 ];
