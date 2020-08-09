@@ -20,6 +20,14 @@ const Home = () => (
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
+    <section className='px-12 -mb-20'>
+      <div className='flex'>
+        <p className='text-white text-2xl font-bold leading-none p-6'>
+          The Abstract People
+        </p>
+      </div>
+    </section>
+
     <section className='h-screen w-full px-16 flex justify-between items-center'>
       <div className='w-2/4'>
         <div className='text-white text-6xl font-bold leading-none mb-6'>
