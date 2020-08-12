@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState } from 'react';
 
 // Components
 import Articles from '../components/articles';
@@ -13,14 +14,13 @@ import { exploreArticlesContent } from '../assets/articles/exploreArticlesConten
 const TAPLogo = '/images/tap_logo.svg';
 const expLogo = '/images/d.jpg';
 
-const exploreArticles: JSX.Element | any = () => (
-    //const [category, setCategory] = useState<string | any>("Arts & Entertainment");
-    <div className='bg-dark-primary'>
+const exploreArticles: JSX.Element | any = () => {
+    const [category, setCategory] = useState<string | any>("Arts & Entertainment");
+    return <div className='bg-dark-primary'>
 
         <Head>
             <title>Explore Articles</title>
             <link rel='icon' href='/favicon.ico' />
-
         </Head>
 
         <section className='px-32 py-2'>
@@ -63,17 +63,17 @@ const exploreArticles: JSX.Element | any = () => (
         <section className='z-5 mx-32'>
 
             <div className='inline-block text-gray-500 mt-16 w-full whitespace-no-wrap overflow-x-scroll text-3xl'>
-                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' >Arts & Entertainment</a>
-                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white'>Industry</a>
-                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white'>Innovation & Tech</a>
-                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white'>Life</a>
-                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white'>Society</a>
+                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Arts & Entertainment")}>Arts & Entertainment</a>
+                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Industry")}>Industry</a>
+                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Innovation & Tech")}>Innovation & Tech</a>
+                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Life")}>Life</a>
+                <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Society")}>Society</a>
             </div>
 
             <hr className='h-1 bg-gray-300 rounded' />
 
             <section className='my-16 flex flex-wrap text-align-center '>
-                {exploreArticlesContent.filter(article => article.category === 'Arts & Entertainment').map((article, index) => {
+                {exploreArticlesContent.filter(article => article.category === category).map((article, index) => {
                     if (index === 0)
                         return <section className='px-32 py-12 text-center'><Article1 topic={article.topic} description={article.description} author={article.author} issueDate={article.issueDate} timeToRead={article.timeToRead} img={article.img} /></section>;
                     return <Articles topic={article.topic} description={article.description} author={article.author} issueDate={article.issueDate} timeToRead={article.timeToRead} img={article.img} />;
@@ -87,6 +87,6 @@ const exploreArticles: JSX.Element | any = () => (
             <p className='text-white text-1xl z-3'></p>
         </section>
     </div>
-);
+};
 
 export default exploreArticles;

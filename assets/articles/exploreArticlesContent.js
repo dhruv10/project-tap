@@ -73,7 +73,7 @@ export const exploreArticlesContent = [
     },
     {
         'category': 'Society',
-        'topic': 'Tezos Commons',
+        'topic': 'Society',
         'description': 'This is a test file, test check tezzos common, hail hydra This is a test file, test check tezzos common, hail hydra This is a test file, test check tezzos common, hail hydra',
         'author': 'Nanak Singh Khurana',
         'issueDate': 'May 14, 2020',
