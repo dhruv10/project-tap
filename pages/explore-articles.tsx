@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react';
 
 // Components
 import Articles from '../components/articles';
@@ -13,19 +15,24 @@ import { exploreArticlesContent } from '../assets/articles/exploreArticlesConten
 const TAPLogo = '/images/tap_logo.svg';
 const expLogo = '/images/d.jpg';
 
-const exploreArticles = () => (
-  <div className='bg-dark-primary'>
+const exploreArticles: JSX.Element | any = () => {
+  const [category, setCategory] = useState<string | any>("Arts & Entertainment");
+  return <div className='bg-dark-primary'>
     <Head>
       <title>Explore Articles</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
 
     <section className='px-32 py-2'>
-      <div className='flex'>
-        <img src={TAPLogo} className='w-12' alt='TAPLogo' />
-        <p className='text-white text-2xl font-bold leading-none p-6'>
-          The Abstract People
-        </p>
+      <div className='w-1/3'>
+        <Link href='./index'><a>
+          <div className='flex'>
+            <img src={TAPLogo} className='w-12' alt='TAPLogo' />
+            <p className='text-white text-2xl font-bold leading-none p-6'>
+              The Abstract People
+          </p>
+          </div></a>
+        </Link>
       </div>
 
       <div className='mt-6 flex text-white w-3/5'>
@@ -56,53 +63,55 @@ const exploreArticles = () => (
 
     <section className='z-5 mx-32'>
       <div className='inline-block text-white mt-16 w-full whitespace-no-wrap overflow-x-scroll font-semibold text-3xl'>
-        <a href='#' className='mx-16 hover:text-gray-600'>
-          Magic
+        <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Arts & Entertainment")}>
+          Arts & Entertainment
         </a>
-        <a href='#' className='mx-16 hover:text-gray-600'>
-          Innovation and Technology
+        <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Industry")}>
+          Industry
         </a>
-        <a href='#' className='mx-16 hover:text-gray-600'>
-          Magic
+        <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Innovation & Tech")}>
+          Innovation & Tech
         </a>
-        <a href='#' className='mx-16 hover:text-gray-600'>
-          Web Development
+        <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Life")}>
+          Life
+        </a>
+        <a href='#' className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white' onClick={() => setCategory("Society")}>
+          Society
         </a>
       </div>
 
       <hr className='h-1 bg-gray-300 rounded' />
-    </section>
 
-    <section className='my-16 flex flex-wrap text-align-center '>
-      {exploreArticlesContent.map((article, index) => {
-        if (index === 0)
+      <section className='my-16 flex flex-wrap text-align-center '>
+        {exploreArticlesContent.filter(article => article.category === category).map((article, index) => {
+          if (index === 0)
+            return (
+              <section className='px-32 py-12 text-center'>
+                <TrendingArticle
+                  topic={article.topic}
+                  description={article.description}
+                  author={article.author}
+                  issueDate={article.issueDate}
+                  timeToRead={article.timeToRead}
+                  img={article.img}
+                />
+              </section>
+            );
           return (
-            <section className='px-32 py-12 text-center'>
-              <TrendingArticle
-                topic={article.topic}
-                description={article.description}
-                author={article.author}
-                issueDate={article.issueDate}
-                timeToRead={article.timeToRead}
-                img={article.img}
-              />
-            </section>
+            <Articles
+              topic={article.topic}
+              description={article.description}
+              author={article.author}
+              issueDate={article.issueDate}
+              timeToRead={article.timeToRead}
+              img={article.img}
+            />
           );
-        return (
-          <Articles
-            topic={article.topic}
-            description={article.description}
-            author={article.author}
-            issueDate={article.issueDate}
-            timeToRead={article.timeToRead}
-            img={article.img}
-          />
-        );
-      })}
+        })}
+      </section>
     </section>
-
     <Footer />
   </div>
-);
+};
 
 export default exploreArticles;
