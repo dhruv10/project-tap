@@ -19,6 +19,23 @@
     "target": "esnext",
     "noImplicitAny": false
   },
+<<<<<<< HEAD
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "pages/_app.js"]
 }
+=======
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/_app.js",
+    "pages/Society.js",
+    "pages/Life.js",
+    "pages/Innovation_&_Tech.js",
+    "pages/Industry.js",
+    "pages/Arts_&_Entertainment.js"
+  ]
+}
+>>>>>>> 7feddae78aba2eb14bf148320693a8ae46faac2c
