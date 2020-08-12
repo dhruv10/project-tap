@@ -6,7 +6,10 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -19,6 +22,12 @@
     "target": "esnext",
     "noImplicitAny": false
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "pages/_app.js"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/_app.js"
+  ]
 }
