@@ -48,7 +48,7 @@ const Eventcard = (props: {
             <p
               className={`ml-8 -mt-12 mb-3 text-${props.color}-500 non-italic font-bold hover:underline`}
             >
-              Read More >>>
+              Read More {'>>>'}
             </p>
           </a>
         </Link>
