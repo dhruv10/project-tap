@@ -12,7 +12,7 @@ const HomepageArticle = (props: {
         {props.content}
       </p>
       <button className='bg-transparent border-2 border-solid border-green-400 hover:bg-green-400 hover:text-white text-green-400 font-bold py-2 px-4 mt-8 rounded'>
-        Learn more >>
+        Learn more {'>>'}
       </button>
     </div>
     <div className='flex justify-end -mr-64 ml-48'>
