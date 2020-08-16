@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
+
 // Components
 import Article from '../components/homepage-article';
 import Footer from '../components/footer';
