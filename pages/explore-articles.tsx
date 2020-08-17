@@ -67,7 +67,7 @@ const exploreArticles: JSX.Element | any = () => {
     */}
 
       <section className='z-5 mx-32'>
-        <div className='inline-block text-white mt-16 w-full whitespace-no-wrap overflow-x-scroll font-semibold text-3xl'>
+        <div className='inline-block text-gray-500 mt-16 w-full whitespace-no-wrap overflow-x-scroll text-3xl'>
           <a
             href='#'
             className='mx-16 hover:text-white hover:font-bold focus:font-bold focus:text-white'
