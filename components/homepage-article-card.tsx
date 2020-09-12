@@ -1,6 +1,10 @@
 import React from 'react';
 
-const HomepageArticleCard = (props: { heading: string; content: string }) => (
+const HomepageArticle = (props: {
+  heading: string;
+  content: string;
+  img: string;
+}) => (
   <div className='my-16 flex justify-between'>
     <div className='w-2/5'>
       <p className='text-white text-3xl font-bold'>{props.heading}</p>
@@ -8,11 +12,14 @@ const HomepageArticleCard = (props: { heading: string; content: string }) => (
         {props.content}
       </p>
       <button className='bg-transparent border-2 border-solid border-green-400 hover:bg-green-400 hover:text-white text-green-400 font-bold py-2 px-4 mt-8 rounded'>
-        Learn more >>
+        Learn more {'>>'}
       </button>
+    </div>
+    <div className='flex justify-end -mr-64 ml-48'>
+      <img src={props.img} width='70%' />
     </div>
     <div className='w-3/5'></div>
   </div>
 );
 
-export default HomepageArticleCard;
+export default HomepageArticle;
