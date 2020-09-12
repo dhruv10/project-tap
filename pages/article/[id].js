@@ -32,10 +32,10 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const Post = ({ articleData }) => (
+const Article = ({ articleData }) => (
   <div className='bg-dark-primary'>
     <Head>
-      <title>Post</title>
+      <title>{articleData.title}</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
     {articleData.title}
@@ -43,4 +43,4 @@ const Post = ({ articleData }) => (
   </div>
 );
 
-export default Post;
+export default Article;
