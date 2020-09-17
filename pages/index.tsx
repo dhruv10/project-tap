@@ -41,7 +41,7 @@ const Home = () => (
         </p>
       </div>
       <div className='text-white flex justify-end'>
-        <img src={MainLogoURL} width='40%' />
+        <img className='rounded-full' src={MainLogoURL} width='40%' />
       </div>
     </section>
 
@@ -51,34 +51,35 @@ const Home = () => (
       <div className='bg-dark-blue h-4/5 w-full absolute left-0 top-120vh z-2'></div>
       <div className='bg-light-blue h-half w-3/4 rounded-oval absolute -right-1/5 top-170vh rotate-4 z-3'></div>
       <div className='bg-dark-primary h-half w-3/5 rounded-oval absolute -left-1/120 top-180vh rotate-4 z-3'></div>
+      <div className='absolute z-5 w-11/12'>
+        <a>
+          <p className='text-white text-5xl font-bold mt-40 mb-24'>
+            Discover Events
+          </p>
+        </a>
+        {Eventdata.map((notify) => {
+          return (
+            <Eventcard
+              month={notify.month}
+              day={notify.day}
+              topic={notify.topic}
+              date={notify.date}
+              subject={notify.subject}
+              place={notify.place}
+              color={notify.color}
+              link={notify.link}
+            />
+          );
+        })}
+      </div>
     </section>
-    <a>
-      <p className='text-white text-5xl font-bold mt-64 px-16'>
-        Discover Events
-      </p>
-    </a>
-    {Eventdata.map((notify) => {
-      return (
-        <Eventcard
-          month={notify.month}
-          day={notify.day}
-          topic={notify.topic}
-          date={notify.date}
-          subject={notify.subject}
-          place={notify.place}
-          color={notify.color}
-          link={notify.link}
-        />
-      );
-    })}
-    <div className='flex flex-col'>
-      <div className='h-screen px-16'>
+
+    <div className='flex flex-col relative z-5'>
+      <div className='px-16'>
         <Link href='./explore-articles'>
-          <a>
-            <p className='text-white text-5xl font-bold -mt-64 hover:underline'>
-              Discover Articles
-            </p>
-          </a>
+          <p className='text-white cursor-pointer text-5xl font-bold hover:underline'>
+            Discover Articles
+          </p>
         </Link>
         {homePageArticles.map((article) => {
           return (
