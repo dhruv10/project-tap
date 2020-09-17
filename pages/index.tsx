@@ -8,8 +8,8 @@ import Footer from '../components/footer';
 import Eventcard from '../components/event-card';
 
 // Data
-import { homePageArticles } from '../assets/articles/homePageArticles';
-import { Eventdata } from '../assets/articles/event-data';
+import { homePageArticles } from '../assets/homePageArticles';
+import { Eventdata } from '../assets/event-data';
 
 // Images
 const MainLogoURL = '/images/tap_logo.svg';
@@ -60,6 +60,7 @@ const Home = () => (
         {Eventdata.map((notify) => {
           return (
             <Eventcard
+              key={notify.day}
               month={notify.month}
               day={notify.day}
               topic={notify.topic}
@@ -84,6 +85,7 @@ const Home = () => (
         {homePageArticles.map((article) => {
           return (
             <ArticleCard
+              key={article.heading}
               heading={article.heading}
               content={article.content}
               img={article.img}

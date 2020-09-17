@@ -7,22 +7,20 @@ const Footer = () => (
     <p className='text-white text-1xl z-3'>Copyrights 2020</p>
     <p className='text-white text-1xl z-3'>Made with ❤️ by team TAP</p>
     <p className='text-white text-1xl z-3'>
-      <Link href='https://www.instagram.com/theabstractpeople.in/'>
-        <a>
-          <SocialIcon
-            url='https://www.instagram.com/theabstractpeople.in'
-            bgColor='rgba(255, 255, 255, .4)'
-          />
-          <SocialIcon
-            url='https://www.facebook.com/theabstractpeople.in'
-            bgColor='rgba(255, 255, 255, .4)'
-          />
-          <SocialIcon
-            url='https://www.youtube.com/c/TheAbstractPeople'
-            bgColor='rgba(255, 255, 255, .4)'
-          />
-        </a>
+      {/* <Link href='https://www.instagram.com/theabstractpeople.in/'>
+        <SocialIcon
+          url='https://www.instagram.com/theabstractpeople.in'
+          bgColor='rgba(255, 255, 255, .4)'
+        />
       </Link>
+      <SocialIcon
+        url='https://www.facebook.com/theabstractpeople.in'
+        bgColor='rgba(255, 255, 255, .4)'
+      />
+      <SocialIcon
+        url='https://www.youtube.com/c/TheAbstractPeople'
+        bgColor='rgba(255, 255, 255, .4)'
+      /> */}
     </p>
   </section>
 );
