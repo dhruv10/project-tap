@@ -1,12 +1,12 @@
 export const Eventdata = [
   {
-    month: 'Mar',
-    day: '12',
-    topic: 'Website Banao',
-    date: '12 March 2020',
-    subject: 'COHO',
-    place: 'CD block,Saket',
+    month: 'Sept',
+    day: '21',
+    topic: 'Website Launch',
+    date: '21 September 2020',
+    subject: 'Online',
+    place: 'TAP YouTube channel',
     color: 'pink',
-    link: './index',
+    link: 'https://www.youtube.com/channel/UCec1HSL8AVm3psSoB1zs-iw',
   },
 ];
