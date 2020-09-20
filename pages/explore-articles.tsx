@@ -9,7 +9,7 @@ import TrendingArticleCard from '../components/trending-article-card';
 import Footer from '../components/footer';
 
 // Data
-import { exploreArticlesContent } from '../assets/articles/exploreArticlesContent';
+import { exploreArticlesContent } from '../assets/exploreArticlesContent';
 
 // Images
 const TAPLogo = '/images/tap_logo.svg';
