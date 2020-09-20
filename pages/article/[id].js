@@ -17,10 +17,10 @@ const Article = ({ articleData }) => (
   <Layout>
     <div className='bg-dark-primary'>
       <Head>
-        <title>{articleData.title}</title>
+        <title>Hello</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      {/* <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} /> */}
       <Footer />
     </div>
   </Layout>
