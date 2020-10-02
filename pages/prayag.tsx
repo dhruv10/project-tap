@@ -94,17 +94,17 @@ const Prayag = () => (
         </div>
       </section>
 
-      <section className='pt-8 text-gray-300 font-semibold text-xl'>
+      <section className='pt-8 text-gray-300 text-xl'>
         <b>Introduction</b>
-        <br />
         <br />
         Prayag institute of Music is one of the finest institutes which give you
         the chance to make your career in music. It is also named as{' '}
-        <a target='_blank' href='https://www.prayagsangeetsamiti.co.in/'>
-          Prayag Sangeet Samiti
-        </a>
-        . <br />
-        This organization was established in 1926. It also organizes events,
+        <u>
+          <a target='_blank' href='https://www.prayagsangeetsamiti.co.in/'>
+            Prayag Sangeet Samiti
+          </a>
+        </u>
+        . This organization was established in 1926. It also organizes events,
         competitions, and many more to revive taste and devotion towards the art
         of music amongst the people. And reward students with rewards and
         certificates. This organization is having a high reputation for
@@ -116,8 +116,8 @@ const Prayag = () => (
         organization.
         <br></br>
         <br></br>
+        <br></br>
         <b>My Experience</b>
-        <br />
         <br />
         Nowadays, people are also making a career in music because they want to
         follow their passion, their dreams, and I am one of them. I am also a
@@ -131,8 +131,8 @@ const Prayag = () => (
         you can pursue this line also.
         <br></br>
         <br></br>
+        <br></br>
         <b>Advantages</b>
-        <br />
         <br />
         There are many advantages for the students which we don’t found in any
         other big institutes of music which are as follows:
@@ -161,7 +161,6 @@ const Prayag = () => (
         <br></br>
         <br></br>
         <b>Conclusion</b>
-        <br />
         <br />
         Today’s youth prefer more light songs, rock songs, and much more. Prayag
         sangeet samiti is the organization which aims to show the culture and
