@@ -34,14 +34,14 @@ const theme = () => (
 
       <section className='py-6'>
         <div className='flex content-center justify-center bg-blue-600'>
-          <div className='py-8 text-white text-8xl font-bold'>
-            Prayag Institute of Music Allahbad
+          <div className='py-8 text-white text-4xl font-bold'>
+            Prayag Sangeet Samiti
           </div>
         </div>
       </section>
 
       <section className='py-4'>
-        <div className='text-white text-6xl font-bold'>
+        <div className='text-white text-3xl font-bold'>
           A note on Junior Diploma from Prayag Institute of Music Allahbad
         </div>
         <div className='text-gray-300 text-2xl font-semibold'>
@@ -79,10 +79,10 @@ const theme = () => (
           </div>
           <div className=''>
             <div className='grid content-end grid-rows-2 grid-flow-col'>
-              <p className='row-span-1 col-span-10 text-2xl text-white font-semibold'>
+              <p className='row-span-1 col-span-10 text-xl text-white font-semibold'>
                 Anusha Bhatnagar
               </p>
-              <p className='row-span-1 col-span-10 text-2xl text-gray-300 pr-4 font-semibold'>
+              <p className='row-span-1 col-span-10 text-xl text-gray-300 pr-4 font-semibold'>
                 Sep 26, 2020 . 7 min read
               </p>
               <img
@@ -94,7 +94,7 @@ const theme = () => (
         </div>
       </section>
 
-      <section className='pt-8 text-gray-300 font-semibold text-3xl'>
+      <section className='pt-8 text-gray-300 font-semibold text-xl'>
         Prayag institute of music is one of the finest institutes which give you
         the chance to make your career in music. It is also named as “PRAYAG
         SANGEET SAMITI”. This organization was established in 1926. It also
@@ -108,6 +108,7 @@ const theme = () => (
         like sitar, harmonium, flute, veena, etc. can also get admission to this
         prestigious organization.
         <br></br>
+        <br></br>
         Nowadays, people are also making a career in music because they want to
         follow their passion, their dreams, and I am one of them. I am also a
         student of this organization and just completed my junior diploma and
@@ -119,10 +120,13 @@ const theme = () => (
         that we need when we are on stage. If you have that art of music then
         you can pursue this line also.
         <br></br>
+        <br></br>
         There are many advantages for the students which we don’t found in any
         other big institutes of music which are as follows:
         <br></br>
+        <br></br>
         <b>1. CAN COMPLETE THEIR DIPLOMA FROM ANYWHERE IN INDIA.</b>
+        <br></br>
         <br></br>
         The main Prayag institute for music is in Allahabad. So it is not
         necessary that if you want to apply you have to go to Allahabad or if
@@ -131,16 +135,19 @@ const theme = () => (
         or guru’s you are comfortable with. Exams (theoretical and practical) of
         this institute is done all over India.
         <br></br>
+        <br></br>
         <b>
           2.THE STUDENTS WHO HAVE THAT PASSION AND ART BUT CANNOT AFFORD THE
           COURSE
         </b>
+        <br></br>
         <br></br>
         The students who have the talent to learn and have a passion for music,
         Prayag institution is the best place for them to learn. Many big
         institutions and their courses of music are way too expensive that
         students who can’t afford it cannot take admission there. But Prayag
         sangeet samiti offers courses that are affordable to most of them.
+        <br></br>
         <br></br>
         Today’s youth prefer more light songs, rock songs, and much more. Prayag
         sangeet samiti is the organization which aims to show the culture and
