@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 const TAPLogo = '/images/tap_logo.svg';
 const Anusha = '/images/anusha.jpg';
 
-const theme = () => (
+const Prayag = () => (
   <div className='bg-dark-primary'>
     <div className='px-32'>
       <Head>
@@ -79,7 +79,7 @@ const theme = () => (
           </div>
           <div className=''>
             <div className='grid content-end grid-rows-2 grid-flow-col'>
-              <p className='row-span-1 col-span-10 text-xl text-white font-semibold'>
+              <p className='row-span-1 col-span-10 text-2xl text-white font-semibold'>
                 Anusha Bhatnagar
               </p>
               <p className='row-span-1 col-span-10 text-xl text-gray-300 pr-4 font-semibold'>
@@ -95,20 +95,30 @@ const theme = () => (
       </section>
 
       <section className='pt-8 text-gray-300 font-semibold text-xl'>
-        Prayag institute of music is one of the finest institutes which give you
-        the chance to make your career in music. It is also named as “PRAYAG
-        SANGEET SAMITI”. This organization was established in 1926. It also
-        organizes events, competitions, and many more to revive taste and
-        devotion towards the art of music amongst the people. And reward
-        students with rewards and certificates. This organization is having a
-        high reputation for consistently upholding the highest and the richest
-        traditions of this sublime art. Youngsters who want to learn Classical
-        Hindustani music can apply here with no doubt. Not only in vocals but
-        students and whosoever want to get a diploma in any of the instruments
-        like sitar, harmonium, flute, veena, etc. can also get admission to this
-        prestigious organization.
+        <b>Introduction</b>
+        <br />
+        <br />
+        Prayag institute of Music is one of the finest institutes which give you
+        the chance to make your career in music. It is also named as{' '}
+        <a target='_blank' href='https://www.prayagsangeetsamiti.co.in/'>
+          Prayag Sangeet Samiti
+        </a>
+        . <br />
+        This organization was established in 1926. It also organizes events,
+        competitions, and many more to revive taste and devotion towards the art
+        of music amongst the people. And reward students with rewards and
+        certificates. This organization is having a high reputation for
+        consistently upholding the highest and the richest traditions of this
+        sublime art. Youngsters who want to learn Classical Hindustani music can
+        apply here with no doubt. Not only in vocals but students and whosoever
+        want to get a diploma in any of the instruments like sitar, harmonium,
+        flute, veena, etc. can also get admission to this prestigious
+        organization.
         <br></br>
         <br></br>
+        <b>My Experience</b>
+        <br />
+        <br />
         Nowadays, people are also making a career in music because they want to
         follow their passion, their dreams, and I am one of them. I am also a
         student of this organization and just completed my junior diploma and
@@ -121,12 +131,14 @@ const theme = () => (
         you can pursue this line also.
         <br></br>
         <br></br>
+        <b>Advantages</b>
+        <br />
+        <br />
         There are many advantages for the students which we don’t found in any
         other big institutes of music which are as follows:
         <br></br>
         <br></br>
-        <b>1. CAN COMPLETE THEIR DIPLOMA FROM ANYWHERE IN INDIA.</b>
-        <br></br>
+        <b>1. Can complete their diploma from anywhere in India</b>
         <br></br>
         The main Prayag institute for music is in Allahabad. So it is not
         necessary that if you want to apply you have to go to Allahabad or if
@@ -137,10 +149,9 @@ const theme = () => (
         <br></br>
         <br></br>
         <b>
-          2.THE STUDENTS WHO HAVE THAT PASSION AND ART BUT CANNOT AFFORD THE
-          COURSE
+          2. The students who have that passion and art but cannot afford the
+          course
         </b>
-        <br></br>
         <br></br>
         The students who have the talent to learn and have a passion for music,
         Prayag institution is the best place for them to learn. Many big
@@ -149,6 +160,9 @@ const theme = () => (
         sangeet samiti offers courses that are affordable to most of them.
         <br></br>
         <br></br>
+        <b>Conclusion</b>
+        <br />
+        <br />
         Today’s youth prefer more light songs, rock songs, and much more. Prayag
         sangeet samiti is the organization which aims to show the culture and
         the tradition we have in the past, the way we respect the guru’s who
@@ -163,4 +177,4 @@ const theme = () => (
   </div>
 );
 
-export default theme;
+export default Prayag;
