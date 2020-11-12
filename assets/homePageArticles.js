@@ -1,15 +1,15 @@
 export const homePageArticles = [
   {
-    heading: 'The Positives',
-    content:
-      'Deep down in the wailing hue,The wind which blew The thoughts that flew.',
+    heading: 'The FOAMViz Project',
+    content: 'A suit of open source visualization tools over FOAM TCRs data.',
     img: '/images/4.jpeg',
+    url: '/foamviz',
   },
   {
     heading: 'Ulajhna nahi aata',
-    content:
-      'Nhi likhti uljhe hue alfaaz main, mujhe zindagi ki tarah ulajhna nhi aata Kyunki mujhe ghuma fira kr baat krna nhi aata',
+    content: 'If you ever get to know the sadness behind the smiling faces',
     img: '/images/5.jpeg',
+    url: '/pip',
   },
   {
     heading: 'THE FIRST DAY',

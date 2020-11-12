@@ -89,6 +89,7 @@ const Home = () => (
               heading={article.heading}
               content={article.content}
               img={article.img}
+              url={article.url}
             />
           );
         })}
